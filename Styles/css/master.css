@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 150px;
+  justify-content: center;
+  align-content: center;
+  max-width: 90%;
+  position: relative;
+}
+
+.parent a {
+  background-color: #EEE;
+  width: 100%;
+  height: 15rem;
+  padding: 10px;
+  border: 10px solid #EEE;
+  border-radius: 5px;
+  transition: transform 1s;
+}
+
+.parent a:hover {
+  transform: scale(1.1);
+}
+
+.parent .one {
+  background-image: url("../imgs/cssgradient-io.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .two {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .three {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .four {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .five {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .six {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .seven {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .eight {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .nine {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .ten {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .eleven {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .twelve {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .thirteen {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .fourteen {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parent .fiveteen {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  top: 8.45em;
+}
+
+.star {
+  position: absolute;
+  top: 12.5em;
+  left: 12.5em;
+  
+  display: inline-block;
+  width: 0;
+  height: 0;
+  
+  margin-left: .9em;
+  margin-right: .9em;
+  margin-bottom: 1.2em;
+  
+  border-right:  .3em solid transparent;
+  border-bottom: .7em  solid #FC0;
+  border-left:   .3em solid transparent;
+
+  /* Controlls the size of the stars. */
+  font-size: 24px;
+  
+  &:before, &:after {
+    content: '';
+    
+    display: block;
+    width: 0;
+    height: 0;
+    
+    position: absolute;
+    top: .6em;
+    left: -1em;
+  
+    border-right:  1em solid transparent;
+    border-bottom: .7em  solid #FC0;
+    border-left:   1em solid transparent;
+  
+    transform: rotate(-35deg);
+  }
+  
+  &:after {  
+    transform: rotate(35deg);
+  }
+}
+
+.rate {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  top: 6.8em;
+  left: 6.1em;
+}
+
+/* Media query for smaller viewports */
+@media (max-width: 768px) {
+  .parent {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); /* Adjust min and max width for smaller screens */
+    gap: 20px;
+  }
+}
